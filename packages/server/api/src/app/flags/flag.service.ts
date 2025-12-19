@@ -136,7 +136,11 @@ export const flagService = {
             },
             {
                 id: ApFlagId.THIRD_PARTY_AUTH_PROVIDERS_TO_SHOW_MAP,
-                value: {},
+                value: {
+                    google: false,
+                    saml: false,
+                    keycloak: system.get(AppSystemProp.KEYCLOAK_AUTH_URL) !== undefined,
+                },
                 created,
                 updated,
             },

@@ -10,6 +10,7 @@ import {
 } from '@activepieces/shared';
 
 import GoogleIcon from '../../../assets/img/custom/auth/google-icon.svg';
+import KeycloakIcon from '../../../assets/img/custom/auth/keycloak-icon.svg';
 import SamlIcon from '../../../assets/img/custom/auth/saml.svg';
 import { flagsHooks } from '../../../hooks/flags-hooks';
 import { authenticationApi } from '../../../lib/authentication-api';
@@ -75,6 +76,21 @@ const ThirdPartyLogin = React.memo(({ isSignUp }: { isSignUp: boolean }) => {
           {isSignUp
             ? `${t(`Sign up With`)} ${t('SAML')}`
             : `${t(`Sign in With`)} ${t('SAML')}`}
+        </Button>
+      )}
+      {thirdPartyAuthProviders?.keycloak && (
+        <Button
+          variant="outline"
+          className="w-full rounded-sm"
+          onClick={(e) =>
+            handleProviderClick(e, ThirdPartyAuthnProviderEnum.KEYCLOAK)
+          }
+        >
+           {/* You might want to upload a Keycloak icon or use a generic one */}
+          <ThirdPartyIcon icon={KeycloakIcon} />
+          {isSignUp
+            ? `${t(`Sign up With`)} ${t('Keycloak')}`
+            : `${t(`Sign in With`)} ${t('Keycloak')}`}
         </Button>
       )}
     </div>
