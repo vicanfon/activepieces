@@ -151,6 +151,13 @@ const systemPropValidators: {
     [AppSystemProp.GOOGLE_CLIENT_ID]: stringValidator,
     [AppSystemProp.GOOGLE_CLIENT_SECRET]: stringValidator,
 
+    // Keycloak
+    [AppSystemProp.KEYCLOAK_CLIENT_ID]: stringValidator,
+    [AppSystemProp.KEYCLOAK_CLIENT_SECRET]: stringValidator,
+    [AppSystemProp.KEYCLOAK_AUTH_URL]: urlValidator,
+    [AppSystemProp.KEYCLOAK_TOKEN_URL]: urlValidator,
+    [AppSystemProp.KEYCLOAK_USERINFO_URL]: urlValidator,
+
     // Cloudflare
     [AppSystemProp.CLOUDFLARE_API_TOKEN]: stringValidator,
     [AppSystemProp.CLOUDFLARE_API_BASE]: stringValidator,

@@ -1,3 +1,9 @@
+# Usage: docker-compose -f docker-compose.keycloak.yml up
+# This setup runs a local Keycloak instance and provides environment configuration for ActivePieces.
+# Note: You still need to run ActivePieces (backend/frontend) locally (e.g. npm run dev),
+# but ensuring the environment variables below are set in your .env or shell.
+
+version: '3'
 services:
   db:
     image: postgres:14.4
@@ -5,7 +11,6 @@ services:
       POSTGRES_DB: activepieces
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: A79Vm5D4p2VQHOp2gd5
-
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:

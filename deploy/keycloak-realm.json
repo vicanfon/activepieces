@@ -1,0 +1,37 @@
+{
+    "realm": "activepieces",
+    "enabled": true,
+    "users": [
+        {
+            "username": "demo",
+            "enabled": true,
+            "email": "demo@activepieces.com",
+            "firstName": "Demo",
+            "lastName": "User",
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "demo"
+                }
+            ],
+            "emailVerified": true
+        }
+    ],
+    "clients": [
+        {
+            "clientId": "activepieces",
+            "enabled": true,
+            "publicClient": false,
+            "secret": "secret",
+            "redirectUris": [
+                "*"
+            ],
+            "protocol": "openid-connect",
+            "standardFlowEnabled": true,
+            "implicitFlowEnabled": false,
+            "directAccessGrantsEnabled": true,
+            "serviceAccountsEnabled": true,
+            "authorizationServicesEnabled": true
+        }
+    ]
+}

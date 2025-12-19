@@ -23,6 +23,21 @@ const getKeycloakIssuerUrl = () => {
     return authUrl ? new URL(authUrl).origin + new URL(authUrl).pathname.replace('/protocol/openid-connect/auth', '') : ''
 }
 
+let client: jwksClient.JwksClient | undefined
+
+const getKeyLoader = () => {
+    if (client) {
+        return client
+    }
+    const authUrl = system.getOrThrow(AppSystemProp.KEYCLOAK_AUTH_URL)
+    const jwksUri = authUrl.replace('/auth', '/certs')
+    client = jwksClient({
+        rateLimit: true,
+        cache: true,
+        jwksUri,
+    })
+    return client
+}
 
 export const keycloakAuthnProvider = (log: FastifyBaseLogger) => ({
     async getLoginUrl(params: GetLoginUrlParams): Promise<string> {
@@ -92,18 +107,7 @@ const verifyIdToken = async (
 ): Promise<KeycloakAuthnIdToken> => {
     const { header } = jwtUtils.decode({ jwt: idToken })
 
-    // Construct JWKS URI from Auth URL or have a separate Env Var.
-    // Standard Keycloak: <issuer>/protocol/openid-connect/certs
-    // Let's derive it from Auth URL which we know is set.
-    const authUrl = system.getOrThrow(AppSystemProp.KEYCLOAK_AUTH_URL)
-    const jwksUri = authUrl.replace('/auth', '/certs')
-
-    const keyLoader = jwksClient({
-        rateLimit: true,
-        cache: true,
-        jwksUri: jwksUri,
-    })
-
+    const keyLoader = getKeyLoader()
     const signingKey = await keyLoader.getSigningKey(header.kid)
     const publicKey = signingKey.getPublicKey()
 
