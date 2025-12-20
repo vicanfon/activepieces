@@ -136,7 +136,11 @@ export const flagService = {
             },
             {
                 id: ApFlagId.THIRD_PARTY_AUTH_PROVIDERS_TO_SHOW_MAP,
-                value: {},
+                value: {
+                    google: system.get(AppSystemProp.KEYCLOAK_AUTH_URL) === undefined,
+                    saml: system.get(AppSystemProp.KEYCLOAK_AUTH_URL) === undefined,
+                    keycloak: system.get(AppSystemProp.KEYCLOAK_AUTH_URL) !== undefined,
+                },
                 created,
                 updated,
             },
@@ -148,7 +152,7 @@ export const flagService = {
             },
             {
                 id: ApFlagId.EMAIL_AUTH_ENABLED,
-                value: true,
+                value: system.get(AppSystemProp.KEYCLOAK_AUTH_URL) === undefined,
                 created,
                 updated,
             },

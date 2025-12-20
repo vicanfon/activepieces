@@ -26,6 +26,7 @@ import { auditEventModule } from './ee/audit-logs/audit-event-module'
 import { auditLogService } from './ee/audit-logs/audit-event-service'
 import { enterpriseLocalAuthnModule } from './ee/authentication/enterprise-local-authn/enterprise-local-authn-module'
 import { federatedAuthModule } from './ee/authentication/federated-authn/federated-authn-module'
+import { federatedAuthModule as ceFederatedAuthModule } from './authentication/federated-authn/federated-authn-module'
 import { otpModule } from './ee/authentication/otp/otp-module'
 import { rbacMiddleware } from './ee/authentication/project-role/rbac-middleware'
 import { authnSsoSamlModule } from './ee/authentication/saml-authn/authn-sso-saml-module'
@@ -322,6 +323,7 @@ export const setupApp = async (app: FastifyInstance): Promise<FastifyInstance> =
             await app.register(projectModule)
             await app.register(communityPiecesModule)
             await app.register(queueMetricsModule)
+            await app.register(ceFederatedAuthModule)
             break
     }
 
