@@ -29,8 +29,8 @@ const getKeyLoader = () => {
     if (client) {
         return client
     }
-    const authUrl = system.getOrThrow(AppSystemProp.KEYCLOAK_AUTH_URL)
-    const jwksUri = authUrl.replace('/auth', '/certs')
+    // Prefer explicitly configured JWKS URL if available, otherwise derive from Auth URL
+    const jwksUri = system.get(AppSystemProp.KEYCLOAK_JWKS_URL) ?? system.getOrThrow(AppSystemProp.KEYCLOAK_AUTH_URL).replace('/auth', '/certs')
     client = jwksClient({
         rateLimit: true,
         cache: true,

@@ -157,6 +157,7 @@ const systemPropValidators: {
     [AppSystemProp.KEYCLOAK_AUTH_URL]: urlValidator,
     [AppSystemProp.KEYCLOAK_TOKEN_URL]: urlValidator,
     [AppSystemProp.KEYCLOAK_USERINFO_URL]: urlValidator,
+    [AppSystemProp.KEYCLOAK_JWKS_URL]: urlValidator,
 
     // Cloudflare
     [AppSystemProp.CLOUDFLARE_API_TOKEN]: stringValidator,
