@@ -1,0 +1,32 @@
+{
+  "name": "pieces-edc",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/pieces/community/edc/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/pieces/community/edc",
+        "tsConfig": "packages/pieces/community/edc/tsconfig.lib.json",
+        "packageJson": "packages/pieces/community/edc/package.json",
+        "main": "packages/pieces/community/edc/src/index.ts",
+        "assets": ["packages/pieces/community/edc/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

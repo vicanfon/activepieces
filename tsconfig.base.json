@@ -331,7 +331,8 @@
       ],
       "@activepieces/piece-neverbounce": [
         "packages/pieces/community/neverbounce/src/index.ts"
-      ]
+      ],
+      "@activepieces/piece-edc": ["packages/pieces/community/edc/src/index.ts"]
     },
     "resolveJsonModule": true
   },
