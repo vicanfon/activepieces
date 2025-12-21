@@ -107,6 +107,9 @@ COPY --from=build /usr/src/app/dist/packages/engine/ ./dist/packages/engine/
 COPY --from=build /usr/src/app/dist/packages/server/ ./dist/packages/server/
 COPY --from=build /usr/src/app/dist/packages/shared/ ./dist/packages/shared/
 COPY --from=build /usr/src/app/packages ./packages
+COPY --from=build /usr/src/app/nx.json .
+COPY --from=build /usr/src/app/tsconfig.base.json .
+COPY --from=build /usr/src/app/package.json .
 
 # Copy frontend files to Nginx document root
 COPY --from=build /usr/src/app/dist/packages/react-ui /usr/share/nginx/html/
