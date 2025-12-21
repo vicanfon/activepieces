@@ -13,6 +13,9 @@ services:
       - keycloak
     env_file: .env
     environment:
+      - AP_ENVIRONMENT=dev
+      - AP_DEV_PIECES=google-sheets,store,edc
+      - AP_PIECES_SYNC_MODE=NONE
       # Keycloak Configuration for ActivePieces
       # AP_KEYCLOAK_AUTH_URL: Accessed by browser (external/host)
       - AP_KEYCLOAK_AUTH_URL=http://localhost:8090/realms/activepieces/protocol/openid-connect/auth
