@@ -92,7 +92,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 COPY nginx.react.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/src/app/packages/server/api/src/assets/default.cf /usr/local/etc/isolate
 COPY docker-entrypoint.sh ./
-RUN chmod +x ./docker-entrypoint.sh
+RUN sed -i 's/\r$//' docker-entrypoint.sh && chmod +x ./docker-entrypoint.sh
 
 # Create all necessary directories in one layer
 RUN mkdir -p \
