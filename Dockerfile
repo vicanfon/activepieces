@@ -70,7 +70,7 @@ RUN --mount=type=cache,target=/root/.bun/install/cache \
 COPY . .
 
 # Build both projects (already has NX_NO_CLOUD from base stage)
-RUN npx nx run-many --target=build --projects=react-ui,server-api --configuration production --parallel=2 --skip-nx-cache
+RUN npx nx run-many --target=build --projects=react-ui,server-api,pieces-edc --configuration production --parallel=2 --skip-nx-cache
 
 # Install production dependencies only for the backend API
 RUN --mount=type=cache,target=/root/.bun/install/cache \
