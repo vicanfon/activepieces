@@ -1,0 +1,586 @@
+activepieces  | AP_APP_TITLE: Activepieces
+activepieces  | AP_FAVICON_URL: https://cdn.activepieces.com/brand/favicon.ico
+activepieces  | Starting backend server with Node.js (WORKER mode or default)
+activepieces  | {"level":30,"time":1766404147780,"pid":10,"hostname":"39db46e933e2","name":"rolesSeed","msg":"Seeding roles"}
+activepieces  | {"level":30,"time":1766404147863,"pid":10,"hostname":"39db46e933e2","name":"seedDevData","msg":"skip: already seeded"}
+activepieces  | {"level":30,"time":1766404148260,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"file-cleanup-trigger","msg":"Upserting job"}
+activepieces  | {"level":30,"time":1766404148387,"pid":10,"hostname":"39db46e933e2","msg":"Piece sync service is disabled"}
+activepieces  | {"level":30,"time":1766404148388,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"pieces-sync","msg":"Upserting job"}
+activepieces  | {"level":30,"time":1766404148392,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"pieces-sync","msg":"Pattern changed, removing job from queue"}
+activepieces  | {"level":30,"time":1766404148397,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"pieces-sync","msg":"Adding job to queue"}
+activepieces  | {"level":30,"time":1766404148598,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"run-telemetry","msg":"Upserting job"}
+activepieces  | {"level":30,"time":1766404148602,"pid":10,"hostname":"39db46e933e2","msg":"[engineResponseWatcher#init] Initializing engine run watcher"}
+activepieces  | {"level":30,"time":1766404149053,"pid":10,"hostname":"39db46e933e2","queueName":"workerJobs","msg":"[jobQueue#ensureQueueExists] Queue created"}
+activepieces  | {"level":30,"time":1766404149053,"pid":10,"hostname":"39db46e933e2","msg":"[jobQueue#init] Dynamic queue system initialized"}
+activepieces  | {"level":30,"time":1766404149073,"pid":10,"hostname":"39db46e933e2","msg":"[setupBullMQBoard] Queue UI is disabled"}
+activepieces  | {"level":30,"time":1766404149104,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"trial-tracker","msg":"Upserting job"}
+activepieces  | {"level":30,"time":1766404149313,"pid":10,"hostname":"39db46e933e2","name":"SystemJob#upsertJob","jobName":"pieces-analytics","msg":"Upserting job"}
+activepieces  | {"level":30,"time":1766404447524,"pid":10,"hostname":"39db46e933e2","msg":"[registryPieceManager] Validating piece installation is working"}
+activepieces  | {"level":30,"time":1766404448610,"pid":10,"hostname":"39db46e933e2","rootWorkspace":"/usr/src/app/cache/v7/common","piecesToInstall":["@activepieces/piece-webhook-0.1.25"],"msg":"[registryPieceManager] Installing pieces in workspace"}
+activepieces  | {"level":30,"time":1766404448646,"pid":10,"hostname":"39db46e933e2","rootWorkspace":"/usr/src/app/cache/v7/common","pieces":["@activepieces/piece-webhook-0.1.25"],"msg":"[registryPieceManager] acquired lock and starting to install pieces"}
+activepieces  | {"level":30,"time":1766404449663,"pid":10,"hostname":"39db46e933e2","rootWorkspace":"/usr/src/app/cache/v7/common","piecesCount":1,"timeTaken":"922ms","msg":"[registryPieceManager] Installed registry pieces using bun"}
+activepieces  | {"level":30,"time":1766404449664,"pid":10,"hostname":"39db46e933e2","edition":"ce","msg":"Activepieces Edition"}
+activepieces  | {"level":30,"time":1766404463180,"pid":10,"hostname":"39db46e933e2","msg":"Installing Pieces Dependencies: csv-parse@5.6.0 googleapis@129.0.0 lodash@4.17.21 tslib@^2.3.0"}
+activepieces  | {"level":30,"time":1766404467898,"pid":10,"hostname":"39db46e933e2","msg":"Starting watch for package: google-sheets"}
+activepieces  | {"level":30,"time":1766404469001,"pid":10,"hostname":"39db46e933e2","msg":"Found piece directory: /usr/src/app/packages/pieces/community/google-sheets"}
+activepieces  | {"level":30,"time":1766404469002,"pid":10,"hostname":"39db46e933e2","msg":"­ƒæÇ Detected changes in pieces. Waiting... ­ƒæÇ pieces-google-sheets"}
+activepieces  | {"level":30,"time":1766404469004,"pid":10,"hostname":"39db46e933e2","msg":"­ƒñî Building pieces with target: build for pieces-google-sheets... ­ƒñî"}
+activepieces  | Creating project graph dependencies with 2 plugins
+activepieces  | 
+activepieces  |  NX   Nx Cloud manually disabled
+activepieces  | 
+activepieces  | Nx will continue running, but nothing will be written or read from the remote cache.
+activepieces  | Run details will also not be available in the Nx Cloud UI.
+activepieces  | 
+activepieces  | If this wasn't intentional, check for the NX_NO_CLOUD environment variable or the --no-cloud flag.
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Running target build for project pieces-google-sheets and 6 tasks it depends on:
+activepieces  | 
+activepieces  | - pieces-google-sheets
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run shared:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "shared"...
+activepieces  | Done compiling TypeScript files for project "shared".
+activepieces  | 
+activepieces  | [2m../../dist/packages/shared/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-framework:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-framework:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-framework"...
+activepieces  | Done compiling TypeScript files for project "pieces-framework".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/framework/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-common:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-common:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-common"...
+activepieces  | Done compiling TypeScript files for project "pieces-common".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/common/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-google-sheets:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-google-sheets:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-google-sheets"...
+activepieces  | Done compiling TypeScript files for project "pieces-google-sheets".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/google-sheets/README.md[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/ar.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/bg.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/ca.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/de.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/es.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/fr.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/hi.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/hu.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/hy.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/id.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/it.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/ja.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/ko.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/nl.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/pl.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/pt.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/ru.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/sv.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/translation.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/uk.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/vi.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/google-sheets/src/i18n/zh.json[22m
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Successfully ran target build for project pieces-google-sheets and 6 tasks it depends on
+activepieces  | 
+activepieces  | 
+activepieces  | npm notice 
+activepieces  | npm notice New major version of npm available! 9.9.3 -> 11.7.0
+activepieces  | npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.7.0>
+activepieces  | npm notice Run `npm install -g npm@11.7.0` to update!
+activepieces  | npm notice 
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-framework"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-framework in a project, run:
+activepieces  |   bun link @activepieces/pieces-framework
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-framework": "link:@activepieces/pieces-framework"
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-common"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-common in a project, run:
+activepieces  |   bun link @activepieces/pieces-common
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-common": "link:@activepieces/pieces-common"
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/shared"
+activepieces  | 
+activepieces  | To use @activepieces/shared in a project, run:
+activepieces  |   bun link @activepieces/shared
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/shared": "link:@activepieces/shared"
+activepieces  | Resolving dependencies
+activepieces  | Resolving dependencies
+activepieces  | Resolving dependencies
+activepieces  | {"level":30,"time":1766404647476,"pid":10,"hostname":"39db46e933e2","msg":"Build completed in 178.47 seconds"}
+activepieces  | {"level":30,"time":1766404649579,"pid":10,"hostname":"39db46e933e2","msg":"Ô£¿ Changes are ready! Please refresh the frontend to see the new updates. Ô£¿"}
+activepieces  | {"level":30,"time":1766404649581,"pid":10,"hostname":"39db46e933e2","msg":"Starting watch for package: store"}
+activepieces  | Resolved, downloaded and extracted [29]
+activepieces  | Resolved, downloaded and extracted [28]
+activepieces  | error: Package "@activepieces/pieces-common" is not linked
+activepieces  | 
+activepieces  | To install a linked package:
+activepieces  |    bun link my-pkg-name-from-package-json
+activepieces  | 
+activepieces  | Tip: the package name is from package.json, which can differ from the folder name.
+activepieces  | 
+activepieces  | error: @activepieces/pieces-common@link:@activepieces/pieces-common failed to resolve
+activepieces  | {"level":50,"time":1766404649771,"pid":10,"hostname":"39db46e933e2","name":"linkSharedActivepiecesPackagesToPiece","message":"{}","msg":"Error linking shared activepieces packages to piece"}
+activepieces  | Resolved, downloaded and extracted [27]
+activepieces  | error: Package "@activepieces/shared" is not linked
+activepieces  | 
+activepieces  | To install a linked package:
+activepieces  |    bun link my-pkg-name-from-package-json
+activepieces  | 
+activepieces  | Tip: the package name is from package.json, which can differ from the folder name.
+activepieces  | 
+activepieces  | error: @activepieces/shared@link:@activepieces/shared failed to resolve
+activepieces  | {"level":50,"time":1766404649853,"pid":10,"hostname":"39db46e933e2","name":"linkSharedActivepiecesPackagesToPiece","message":"{}","msg":"Error linking shared activepieces packages to piece"}
+activepieces  | Saved lockfile
+activepieces  | 
+activepieces  | + @activepieces/pieces-common@0.10.1
+activepieces  | + @activepieces/shared@0.30.2 (v0.30.3 available)
+activepieces  | + @sinclair/typebox@0.34.11
+activepieces  | + axios@1.13.1
+activepieces  | + axios-retry@4.4.1
+activepieces  | + csv-parse@5.6.0 (v6.1.0 available)
+activepieces  | + dayjs@1.11.9
+activepieces  | + deepmerge-ts@7.1.0
+activepieces  | + googleapis@129.0.0 (v169.0.0 available)
+activepieces  | + lodash@4.17.21
+activepieces  | + mime-types@2.1.35 (v3.0.2 available)
+activepieces  | + nanoid@3.3.8
+activepieces  | + semver@7.6.0
+activepieces  | + socket.io-client@4.8.1
+activepieces  | + tslib@2.6.2 (v2.8.1 available)
+activepieces  | + zod@4.1.13
+activepieces  | 
+activepieces  | installed @activepieces/pieces-framework@link:@activepieces/pieces-framework
+activepieces  | 
+activepieces  | 82 packages installed [2.88s]
+activepieces  | {"level":30,"time":1766404654352,"pid":10,"hostname":"39db46e933e2","msg":"Found piece directory: /usr/src/app/packages/pieces/community/store"}
+activepieces  | {"level":30,"time":1766404654353,"pid":10,"hostname":"39db46e933e2","msg":"­ƒæÇ Detected changes in pieces. Waiting... ­ƒæÇ pieces-store"}
+activepieces  | {"level":30,"time":1766404654354,"pid":10,"hostname":"39db46e933e2","msg":"­ƒñî Building pieces with target: build for pieces-store... ­ƒñî"}
+activepieces  | 
+activepieces  |  NX   Nx Cloud manually disabled
+activepieces  | 
+activepieces  | Nx will continue running, but nothing will be written or read from the remote cache.
+activepieces  | Run details will also not be available in the Nx Cloud UI.
+activepieces  | 
+activepieces  | If this wasn't intentional, check for the NX_NO_CLOUD environment variable or the --no-cloud flag.
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Running target build for project pieces-store and 6 tasks it depends on:
+activepieces  | 
+activepieces  | - pieces-store
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run shared:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "shared"...
+activepieces  | Done compiling TypeScript files for project "shared".
+activepieces  | 
+activepieces  | [2m../../dist/packages/shared/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-framework:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-framework:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-framework"...
+activepieces  | Done compiling TypeScript files for project "pieces-framework".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/framework/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-common:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-common:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-common"...
+activepieces  | Done compiling TypeScript files for project "pieces-common".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/common/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-store:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-store:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-store"...
+activepieces  | Done compiling TypeScript files for project "pieces-store".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/store/README.md[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/ar.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/bg.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/ca.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/de.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/es.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/fr.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/hi.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/hu.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/hy.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/id.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/it.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/ja.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/ko.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/nl.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/pl.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/pt.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/ru.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/sv.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/translation.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/uk.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/vi.json[22m
+activepieces  | 
+activepieces  | [2m../../../../../../dist/packages/pieces/community/store/src/i18n/zh.json[22m
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Successfully ran target build for project pieces-store and 6 tasks it depends on
+activepieces  | 
+activepieces  | Nx read the output from the cache instead of running the command for 3 out of 7 tasks.
+activepieces  | 
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-framework"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-framework in a project, run:
+activepieces  |   bun link @activepieces/pieces-framework
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-framework": "link:@activepieces/pieces-framework"
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-common"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-common in a project, run:
+activepieces  |   bun link @activepieces/pieces-common
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-common": "link:@activepieces/pieces-common"
+activepieces  | Resolving dependencies
+activepieces  | Resolving dependencies
+activepieces  | Resolving dependencies
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/shared"
+activepieces  | 
+activepieces  | To use @activepieces/shared in a project, run:
+activepieces  |   bun link @activepieces/shared
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/shared": "link:@activepieces/shared"
+activepieces  | {"level":30,"time":1766404683138,"pid":10,"hostname":"39db46e933e2","msg":"Build completed in 28.78 seconds"}
+activepieces  | Resolved, downloaded and extracted [39]
+activepieces  | Resolved, downloaded and extracted [19]
+activepieces  | Resolved, downloaded and extracted [19]
+activepieces  | FileNotFound: failed copying files from cache to destination for package set-function-length
+activepieces  | FileNotFound: failed opening node_modules/package dir for package es-object-atoms
+activepieces  | FileNotFound: failed copying files from cache to destination for package define-properties
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-boolean-object
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-number-object
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-weakmap
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-weakset
+activepieces  | Saved lockfile
+activepieces  | 
+activepieces  | + @activepieces/pieces-framework@0.22.2
+activepieces  | + @activepieces/shared@0.30.2 (v0.30.3 available)
+activepieces  | + @sinclair/typebox@0.34.11
+activepieces  | + axios@1.13.1
+activepieces  | + axios-retry@4.4.1
+activepieces  | + deep-equal@2.2.2
+activepieces  | + deepmerge-ts@7.1.0
+activepieces  | + mime-types@2.1.35 (v3.0.2 available)
+activepieces  | + nanoid@3.3.8
+activepieces  | + semver@7.6.0
+activepieces  | + socket.io-client@4.8.1
+activepieces  | + tslib@2.6.2 (v2.8.1 available)
+activepieces  | + zod@4.1.13
+activepieces  | 
+activepieces  | installed @activepieces/pieces-common@link:@activepieces/pieces-common
+activepieces  | 
+activepieces  | 85 packages installed [2.42s]
+activepieces  | Failed to install 7 packages
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-boolean-object
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-number-object
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-weakmap
+activepieces  | FileNotFound: failed copying files from cache to destination for package is-weakset
+activepieces  | PathAlreadyExists: failed copying files from cache to destination for package engine.io-parser
+activepieces  | 
+activepieces  | + axios@1.13.1
+activepieces  | + nanoid@3.3.8
+activepieces  | + semver@7.6.0
+activepieces  | + socket.io-client@4.8.1
+activepieces  | + tslib@2.6.2 (v2.8.1 available)
+activepieces  | + zod@4.1.13
+activepieces  | 
+activepieces  | installed @activepieces/pieces-framework@link:@activepieces/pieces-framework
+activepieces  | 
+activepieces  | 53 packages installed [2.42s]
+activepieces  | Failed to install 5 packages
+activepieces  | Saved lockfile
+activepieces  | FileNotFound: failed copying files from cache to destination for package zod
+activepieces  | FileNotFound: failed copying files from cache to destination for package set-function-length
+activepieces  | FileNotFound: failed copying files from cache to destination for package @activepieces/shared
+activepieces  | Saved lockfile
+activepieces  | 
+activepieces  | + @sinclair/typebox@0.34.11
+activepieces  | + axios@1.13.1
+activepieces  | + axios-retry@4.4.1
+activepieces  | + deep-equal@2.2.2
+activepieces  | + deepmerge-ts@7.1.0
+activepieces  | + mime-types@2.1.35 (v3.0.2 available)
+activepieces  | + nanoid@3.3.8
+activepieces  | + semver@7.6.0
+activepieces  | + socket.io-client@4.8.1
+activepieces  | + tslib@2.6.2 (v2.8.1 available)
+activepieces  | 
+activepieces  | installed @activepieces/shared@link:@activepieces/shared
+activepieces  | 
+activepieces  | 85 packages installed [2.42s]
+activepieces  | Failed to install 3 packages
+activepieces  | {"level":30,"time":1766404688141,"pid":10,"hostname":"39db46e933e2","msg":"Ô£¿ Changes are ready! Please refresh the frontend to see the new updates. Ô£¿"}
+activepieces  | {"level":30,"time":1766404688143,"pid":10,"hostname":"39db46e933e2","msg":"Starting watch for package: edc"}
+activepieces  | {"level":30,"time":1766404692804,"pid":10,"hostname":"39db46e933e2","msg":"Found piece directory: /usr/src/app/packages/pieces/community/edc"}
+activepieces  | {"level":30,"time":1766404692805,"pid":10,"hostname":"39db46e933e2","msg":"­ƒæÇ Detected changes in pieces. Waiting... ­ƒæÇ pieces-edc"}
+activepieces  | {"level":30,"time":1766404692807,"pid":10,"hostname":"39db46e933e2","msg":"­ƒñî Building pieces with target: build for pieces-edc... ­ƒñî"}
+activepieces  | 
+activepieces  |  NX   Nx Cloud manually disabled
+activepieces  | 
+activepieces  | Nx will continue running, but nothing will be written or read from the remote cache.
+activepieces  | Run details will also not be available in the Nx Cloud UI.
+activepieces  | 
+activepieces  | If this wasn't intentional, check for the NX_NO_CLOUD environment variable or the --no-cloud flag.
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Running target build for project pieces-edc and 5 tasks it depends on:
+activepieces  | 
+activepieces  | - pieces-edc
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run shared:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "shared"...
+activepieces  | Done compiling TypeScript files for project "shared".
+activepieces  | 
+activepieces  | [2m../../dist/packages/shared/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-framework:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-framework:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-framework"...
+activepieces  | Done compiling TypeScript files for project "pieces-framework".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/framework/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-common:prebuild
+activepieces  | 
+activepieces  | > bun install --no-save --silent
+activepieces  | 
+activepieces  | 
+activepieces  | > nx run pieces-common:build  [local cache]
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-common"...
+activepieces  | Done compiling TypeScript files for project "pieces-common".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/common/README.md[22m
+activepieces  | 
+activepieces  | > nx run pieces-edc:build
+activepieces  | 
+activepieces  | Compiling TypeScript files for project "pieces-edc"...
+activepieces  | Done compiling TypeScript files for project "pieces-edc".
+activepieces  | 
+activepieces  | [2m../../../../dist/packages/pieces/community/edc/README.md[22m
+activepieces  | 
+activepieces  | 
+activepieces  | 
+activepieces  |  NX   Successfully ran target build for project pieces-edc and 5 tasks it depends on
+activepieces  | 
+activepieces  | Nx read the output from the cache instead of running the command for 3 out of 6 tasks.
+activepieces  | 
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-framework"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-framework in a project, run:
+activepieces  |   bun link @activepieces/pieces-framework
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-framework": "link:@activepieces/pieces-framework"
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/pieces-common"
+activepieces  | 
+activepieces  | To use @activepieces/pieces-common in a project, run:
+activepieces  |   bun link @activepieces/pieces-common
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/pieces-common": "link:@activepieces/pieces-common"
+activepieces  | bun link v1.3.1 (89fa0f34)
+activepieces  | Success! Registered "@activepieces/shared"
+activepieces  | 
+activepieces  | To use @activepieces/shared in a project, run:
+activepieces  |   bun link @activepieces/shared
+activepieces  | 
+activepieces  | Or add it in dependencies in your package.json file:
+activepieces  |   "@activepieces/shared": "link:@activepieces/shared"
+activepieces  | {"level":30,"time":1766404716899,"pid":10,"hostname":"39db46e933e2","msg":"Build completed in 24.09 seconds"}
+activepieces  | {"level":30,"time":1766404720394,"pid":10,"hostname":"39db46e933e2","msg":"Ô£¿ Changes are ready! Please refresh the frontend to see the new updates. Ô£¿"}
+activepieces  | {"level":30,"time":1766404722300,"pid":10,"hostname":"39db46e933e2","msg":"Server listening at http://127.0.0.1:3000"}
+activepieces  | {"level":30,"time":1766404722300,"pid":10,"hostname":"39db46e933e2","msg":"Server listening at http://172.21.0.5:3000"}
+activepieces  | {"level":30,"time":1766404722315,"pid":10,"hostname":"39db46e933e2","msg":"\n             _____   _______   _____  __      __  ______   _____    _____   ______    _____   ______    _____\n    /\\      / ____| |__   __| |_   _| \\ \\    / / |  ____| |  __ \\  |_   _| |  ____|  / ____| |  ____|  / ____|\n   /  \\    | |         | |      | |    \\ \\  / /  | |__    | |__) |   | |   | |__    | |      | |__    | (___\n  / /\\ \\   | |         | |      | |     \\ \\/ /   |  __|   |  ___/    | |   |  __|   | |      |  __|    \\___ \\\n / ____ \\  | |____     | |     _| |_     \\  /    | |____  | |       _| |_  | |____  | |____  | |____   ____) |\n/_/    \\_\\  \\_____|    |_|    |_____|     \\/     |______| |_|      |_____| |______|  \\_____| |______| |_____/\n\nThe application started on http://localhost:8080/api/, as specified by the AP_FRONTEND_URL variables."}
+activepieces  | {"level":30,"time":1766404722328,"pid":10,"hostname":"39db46e933e2","msg":"[unifyOldQueuesIntoOne] Already migrated, skipping"}
+activepieces  | {"level":30,"time":1766404722334,"pid":10,"hostname":"39db46e933e2","msg":"[removeRateLimitJobsQueue] Already migrated, skipping"}
+activepieces  | {"level":30,"time":1766404722341,"pid":10,"hostname":"39db46e933e2","message":"Worker connected","workerId":"fxz3S5UUbKLge1cHEcoUt"}
+activepieces  | {"level":30,"time":1766404722342,"pid":10,"hostname":"39db46e933e2","msg":"[refillPausedRuns] Already migrated, skipping"}
+activepieces  | {"level":30,"time":1766404722343,"pid":10,"hostname":"39db46e933e2","message":"Connected to server","workerId":"fxz3S5UUbKLge1cHEcoUt","socketId":"_SZ41YISlaZDUh39AAAB"}
+activepieces  | {"level":30,"time":1766404722344,"pid":10,"hostname":"39db46e933e2","msg":"[deleteStaleRunMetadata] Already migrated, skipping"}
+activepieces  | {"level":30,"time":1766404722345,"pid":10,"hostname":"39db46e933e2","msg":"Queues migrated and consumers run"}
+activepieces  | {"level":40,"time":1766404722345,"pid":10,"hostname":"39db46e933e2","msg":"[WARNING]: The application is running in dev mode."}
+activepieces  | {"level":40,"time":1766404722345,"pid":10,"hostname":"39db46e933e2","msg":"[WARNING]: This is only shows pieces specified in AP_DEV_PIECES google-sheets,store,edc environment variable."}
+activepieces  | {"level":30,"time":1766404722984,"pid":10,"hostname":"39db46e933e2","msg":"[registryPieceManager] Warming up pieces cache"}
+activepieces  | {"level":30,"time":1766404722992,"pid":10,"hostname":"39db46e933e2","piecesCount":0,"timeTaken":"7ms","msg":"[registryPieceManager] Warmed up pieces cache"}
+activepieces  | {"level":30,"time":1766404723001,"pid":10,"hostname":"39db46e933e2","message":"Job queue worker started"}
+activepieces  | {"level":30,"time":1766404723006,"pid":10,"hostname":"39db46e933e2","message":"Initialized runs metadata queue for worker","msg":"[flowWorker#init]"}
+activepieces  | {"level":30,"time":1766404800165,"pid":10,"hostname":"39db46e933e2","msg":"Syncing pieces analytics"}
+activepieces  | {"level":30,"time":1766404800165,"pid":10,"hostname":"39db46e933e2","msg":"Synced pieces analytics finished"}
+activepieces  | {"level":30,"time":1766404800193,"pid":10,"hostname":"39db46e933e2","msg":"[localPieceCache] Refreshing pieces cache via cron job"}
+activepieces  | {"level":30,"time":1766404860717,"pid":10,"hostname":"39db46e933e2","msg":"Piece sync service is disabled"}
+activepieces  | {"level":30,"time":1766405755190,"pid":10,"hostname":"39db46e933e2","counts":0,"types":["FLOW_RUN_LOG","FLOW_STEP_FILE","TRIGGER_EVENT_FILE","TRIGGER_PAYLOAD"],"msg":"[FileService#deleteStaleBulk] iteration completed"}
+activepieces  | {"level":30,"time":1766405755190,"pid":10,"hostname":"39db46e933e2","totalAffected":0,"types":["FLOW_RUN_LOG","FLOW_STEP_FILE","TRIGGER_EVENT_FILE","TRIGGER_PAYLOAD"],"msg":"[FileService#deleteStaleBulk] completed"}
+activepieces  | {"level":30,"time":1766406600047,"pid":10,"hostname":"39db46e933e2","counts":0,"types":["FLOW_RUN_LOG","FLOW_STEP_FILE","TRIGGER_EVENT_FILE","TRIGGER_PAYLOAD"],"msg":"[FileService#deleteStaleBulk] iteration completed"}
+activepieces  | {"level":30,"time":1766406600047,"pid":10,"hostname":"39db46e933e2","totalAffected":0,"types":["FLOW_RUN_LOG","FLOW_STEP_FILE","TRIGGER_EVENT_FILE","TRIGGER_PAYLOAD"],"msg":"[FileService#deleteStaleBulk] completed"}
+activepieces  | {"level":30,"time":1766406600057,"pid":10,"hostname":"39db46e933e2","msg":"[localPieceCache] Refreshing pieces cache via cron job"}
+activepieces  | {"level":30,"time":1766407500863,"pid":10,"hostname":"39db46e933e2","msg":"[localPieceCache] Refreshing pieces cache via cron job"}
+activepieces  | {"level":30,"time":1766407852487,"pid":10,"hostname":"39db46e933e2","reqId":"req_GFKL1JAZ52KuVWvKPCbMo","email":"demo@activepieces.com","msg":"Creating user identity"}
+activepieces  | {"level":30,"time":1766407852614,"pid":10,"hostname":"39db46e933e2","reqId":"req_GFKL1JAZ52KuVWvKPCbMo","count":0,"msg":"[provisionUserInvitation] list invitations"}
+activepieces  | {"level":30,"time":1766407853364,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":40,"time":1766407854981,"pid":10,"hostname":"39db46e933e2","reqId":"req_HuwhN9KPHb95vjH1eU1VU","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766407916851,"pid":10,"hostname":"39db46e933e2","reqId":"req_0G15LGuM95oiuOq4IzS79","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":30,"time":1766407916874,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":30,"time":1766408460035,"pid":10,"hostname":"39db46e933e2","msg":"Piece sync service is disabled"}
+activepieces  | {"level":30,"time":1766408856130,"pid":10,"hostname":"39db46e933e2","reqId":"req_0ZPNdeAh6ujfP53MQwppE","userId":"ArmCCZKZ24t2qCENLKrF8","event":"flow.created","properties":{"flowId":"Vxfaogx799WK1ATccZbdJ","activepiecesVersion":"0.74.3","activepiecesEnvironment":"dev","activepiecesEdition":"ce","datetime":"2025-12-22T13:07:36.130Z"},"msg":"[Telemetry#trackUser] sending event"}
+activepieces  | {"level":40,"time":1766408859135,"pid":10,"hostname":"39db46e933e2","reqId":"req_IhvQHlbmGgqYMizXgM3ct","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408859141,"pid":10,"hostname":"39db46e933e2","reqId":"req_jJWBTNlOYoZI9M1OI8ImC","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408860084,"pid":10,"hostname":"39db46e933e2","reqId":"req_m7e3QimEY0aWlC3kb0GY2","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408860953,"pid":10,"hostname":"39db46e933e2","reqId":"req_zukKb2zY7lj3xxnfL3ohi","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408861782,"pid":10,"hostname":"39db46e933e2","reqId":"req_y8LNdz7F7pIXuzh0tymic","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408861958,"pid":10,"hostname":"39db46e933e2","reqId":"req_zGfNFJTzNXpsD2WnCvK9C","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408862869,"pid":10,"hostname":"39db46e933e2","reqId":"req_DJsYwm4vsTBTTEMuWO97u","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408867668,"pid":10,"hostname":"39db46e933e2","reqId":"req_HkQP8lWK1Szq7mls2eRwG","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408867679,"pid":10,"hostname":"39db46e933e2","reqId":"req_1dxjKkggTetVG2vvdxg4V","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408868634,"pid":10,"hostname":"39db46e933e2","reqId":"req_KMtE0KfQm8vZj9DxCK2RX","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408870604,"pid":10,"hostname":"39db46e933e2","reqId":"req_btEBEyFKoRl7oGb68WLvj","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":30,"time":1766408873693,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":30,"time":1766408877249,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":40,"time":1766408880075,"pid":10,"hostname":"39db46e933e2","reqId":"req_B0e6za8jfGQI7N9H3EHYc","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408880084,"pid":10,"hostname":"39db46e933e2","reqId":"req_hrk8PoIlZWAvVayE9Bx1Z","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408881117,"pid":10,"hostname":"39db46e933e2","reqId":"req_SkWO2rEK62FJLgGi3Y3WP","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408883086,"pid":10,"hostname":"39db46e933e2","reqId":"req_7euKtyV8vSZSjcDXKHMY7","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408886788,"pid":10,"hostname":"39db46e933e2","reqId":"req_GgFmJ1z07m3m9hdTRtIUF","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":30,"time":1766408957871,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":40,"time":1766408961196,"pid":10,"hostname":"39db46e933e2","reqId":"req_KYQErE0qNhCXnUi0iLpvS","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408961204,"pid":10,"hostname":"39db46e933e2","reqId":"req_aDTUnBsZgzbeq8mBTsMBN","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408962161,"pid":10,"hostname":"39db46e933e2","reqId":"req_2uFSW0loWSAcKoGR1IMDs","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408964171,"pid":10,"hostname":"39db46e933e2","reqId":"req_rAGizc02KJQyRiPAeUDjJ","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408968004,"pid":10,"hostname":"39db46e933e2","reqId":"req_IJpkg1oRdFslG1I14nuNE","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408978895,"pid":10,"hostname":"39db46e933e2","reqId":"req_rIRXCAdWjFz9TTicHBa8T","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408979856,"pid":10,"hostname":"39db46e933e2","reqId":"req_kYiY2cK02ACWDBVVr65nT","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766408981803,"pid":10,"hostname":"39db46e933e2","reqId":"req_ZlRFfLdBpzRweQfgeHFjs","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409082100,"pid":10,"hostname":"39db46e933e2","reqId":"req_o6KvLXi48cHcP6sIZFbNJ","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409083119,"pid":10,"hostname":"39db46e933e2","reqId":"req_tfHjJpWGtxi5duHt2ZXNX","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":30,"time":1766409085904,"pid":10,"hostname":"39db46e933e2","message":"User connected","userId":"ArmCCZKZ24t2qCENLKrF8","projectId":"dpEkHXLyzD3dBbp2CAdpY"}
+activepieces  | {"level":40,"time":1766409088685,"pid":10,"hostname":"39db46e933e2","reqId":"req_Ihi7E3dpEZNaLSgfDdK7E","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409088691,"pid":10,"hostname":"39db46e933e2","reqId":"req_TaSTNtFviy7k1G6aolxZ8","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409089656,"pid":10,"hostname":"39db46e933e2","reqId":"req_hzgO7Ue1k7WohVWfDFeut","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409091682,"pid":10,"hostname":"39db46e933e2","reqId":"req_G6NoVDj6tRW3KEF8wrhTS","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":40,"time":1766409095560,"pid":10,"hostname":"39db46e933e2","reqId":"req_tpbITtK8UwGBIPls93NIj","name":"FilePieceMetadataService#loadPiecesFromFolder","message":"Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs","stack":"Error: Cannot find module '@activepieces/pieces-framework'\nRequire stack:\n- /usr/src/app/dist/packages/pieces/community/edc/src/index.js\n- /usr/src/app/dist/packages/server/api/main.cjs\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)\n    at Module._load (node:internal/modules/cjs/loader:1038:27)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (/usr/src/app/packages/pieces/community/edc/src/index.ts:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Module.require (node:internal/modules/cjs/loader:1289:19)"}
+activepieces  | {"level":30,"time":1766409300059,"pid":10,"hostname":"39db46e933e2","msg":"[localPieceCache] Refreshing pieces cache via cron job"}

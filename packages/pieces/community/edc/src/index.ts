@@ -9,10 +9,10 @@ import { initiateTransfer, getTransfer, getTransferState, terminateTransfer, sus
 import { readTransferData } from "./lib/actions/read-data";
 
 export const edc = createPiece({
-  displayName: "Edc",
+  displayName: "EDC Connector",
   auth: edcAuth,
   minimumSupportedRelease: '0.36.1',
-  logoUrl: "https://cdn.activepieces.com/pieces/edc.png",
+  logoUrl: "./assets/logo.png",
   authors: [],
   actions: [
     // Assets

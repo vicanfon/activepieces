@@ -69,8 +69,14 @@ RUN --mount=type=cache,target=/root/.bun/install/cache \
 # Copy source code after dependency installation
 COPY . .
 
-# Build both projects (already has NX_NO_CLOUD from base stage)
-RUN npx nx run-many --target=build --projects=react-ui,server-api,pieces-edc --configuration production --parallel=2 --skip-nx-cache
+# Build frontend, backend, and curated pieces (reduced list)
+RUN npx nx run-many --target=build --projects=react-ui,server-api,\
+pieces-activepieces,pieces-ai,pieces-mcp,pieces-subflows,pieces-queue,pieces-schedule,\
+pieces-postgres,pieces-mongodb,pieces-mysql,pieces-sftp,\
+pieces-microsoft-teams,pieces-whatsapp,pieces-imap,pieces-smtp,\
+pieces-github,pieces-rabbitmq,pieces-json,pieces-http,\
+pieces-openai,pieces-claude,pieces-edc,pieces-store \
+--configuration production --parallel=4 --skip-nx-cache
 
 # Install production dependencies only for the backend API
 RUN --mount=type=cache,target=/root/.bun/install/cache \
@@ -106,10 +112,21 @@ COPY --from=build /usr/src/app/LICENSE .
 COPY --from=build /usr/src/app/dist/packages/engine/ ./dist/packages/engine/
 COPY --from=build /usr/src/app/dist/packages/server/ ./dist/packages/server/
 COPY --from=build /usr/src/app/dist/packages/shared/ ./dist/packages/shared/
+# Copy built pieces for dev mode
+COPY --from=build /usr/src/app/dist/packages/pieces/ ./dist/packages/pieces/
+# Copy node_modules so pieces can find their dependencies (@activepieces/pieces-framework, etc.)
+COPY --from=build /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/packages ./packages
 COPY --from=build /usr/src/app/nx.json .
 COPY --from=build /usr/src/app/tsconfig.base.json .
 COPY --from=build /usr/src/app/package.json .
+
+# Create symlinks for @activepieces internal packages so dev pieces can find them
+# The pieces require these packages but they are workspace packages, not npm packages
+RUN mkdir -p node_modules/@activepieces && \
+    ln -sf /usr/src/app/dist/packages/pieces/community/framework node_modules/@activepieces/pieces-framework && \
+    ln -sf /usr/src/app/dist/packages/pieces/community/common node_modules/@activepieces/pieces-common && \
+    ln -sf /usr/src/app/dist/packages/shared node_modules/@activepieces/shared
 
 # Copy frontend files to Nginx document root
 COPY --from=build /usr/src/app/dist/packages/react-ui /usr/share/nginx/html/
