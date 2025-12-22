@@ -19,6 +19,8 @@ import { platformHooks } from '@/hooks/platform-hooks';
 import { cn, determineDefaultRoute } from '@/lib/utils';
 import { ApEdition, ApFlagId } from '@activepieces/shared';
 
+import OrchestratorLogo from '@/assets/img/custom/auth/orchestrator-logo.png';
+
 export const AppSidebarHeader = () => {
   const { embedState } = useEmbedding();
   const { data: edition } = flagsHooks.useFlag<ApEdition>(ApFlagId.EDITION);
@@ -46,11 +48,7 @@ export const AppSidebarHeader = () => {
                   )}
                 >
                   <img
-                    src={
-                      state === 'collapsed'
-                        ? branding.logos.logoIconUrl
-                        : branding.logos.fullLogoUrl
-                    }
+                    src={OrchestratorLogo}
                     alt={t('home')}
                     className={cn(
                       'object-contain',

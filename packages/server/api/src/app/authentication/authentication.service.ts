@@ -33,10 +33,21 @@ export const authenticationService = (log: FastifyBaseLogger) => ({
             return createUserAndPlatform(userIdentity, log)
         }
 
-        await authenticationUtils.assertUserIsInvitedToPlatformOrProject(log, {
-            email: params.email,
-            platformId: params.platformId,
-        })
+        // Skip invitation check for federated auth providers (Keycloak, Google, JWT, SAML)
+        // These are trusted identity providers and users should be auto-provisioned
+        const isFederatedProvider = [
+            UserIdentityProvider.KEYCLOAK,
+            UserIdentityProvider.GOOGLE,
+            UserIdentityProvider.JWT,
+            UserIdentityProvider.SAML,
+        ].includes(params.provider)
+        
+        if (!isFederatedProvider) {
+            await authenticationUtils.assertUserIsInvitedToPlatformOrProject(log, {
+                email: params.email,
+                platformId: params.platformId,
+            })
+        }
         const userIdentity = await userIdentityService(log).create({
             ...params,
             verified: true,

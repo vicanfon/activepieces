@@ -13,6 +13,10 @@ services:
       - keycloak
     env_file: .env
     environment:
+      - AP_ENVIRONMENT=dev
+      # Curated list of local dev pieces
+      - AP_DEV_PIECES=activepieces,ai,mcp,subflows,queue,schedule,postgres,mongodb,mysql,sftp,microsoft-teams,whatsapp,imap,smtp,github,rabbitmq,json,http,openai,claude,edc,store
+      - AP_PIECES_SYNC_MODE=NONE
       # Keycloak Configuration for ActivePieces
       # AP_KEYCLOAK_AUTH_URL: Accessed by browser (external/host)
       - AP_KEYCLOAK_AUTH_URL=http://localhost:8090/realms/activepieces/protocol/openid-connect/auth
@@ -63,8 +67,8 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
       # Force issuer to match the browser access URL to prevent token verification failure
-      KC_HOSTNAME: localhost
-      KC_HOSTNAME_PORT: 8090
+      KC_HOSTNAME_URL: http://localhost:8090
+      KC_HOSTNAME_ADMIN_URL: http://localhost:8090
       KC_HOSTNAME_STRICT: "false"
       KC_HOSTNAME_STRICT_HTTPS: "false"
       KC_HTTP_ENABLED: "true"

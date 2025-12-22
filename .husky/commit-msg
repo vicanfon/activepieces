@@ -10,4 +10,4 @@ if ! grep -q "^Merge" "$1"; then
   fi
 fi
 
-npx --no -- commitlint --edit ${1}
+npx --no -- @commitlint/cli --edit "${1}"
